@@ -14,20 +14,13 @@ pip install -r requirement.txt
 python query.py --csv=/path/to/csv --request="your_formatted_request" --no-header --verbose --method=GET
 ```
 
-``--csv`` ``-c``<br/>
-Path to the CSV file. This file is use during the formatting process. See below for more details.
- <br/>
-``--request`` ``-r``<br/>
-Your HTTP request, formatted with your variable (ie {0} {1} ... or ... {var1} {var2} ...). See below for more details about how to format your request.
- <br/>
-``--no-header``<br/>
-Specify that your CSV file have no header.
- <br/>
-``--verbose``<br/>
-Add response content to the ouput (default, only status code)
- <br/>
-``--method``<br/>
-Choose the method of your http request. Only GET, POST, PUT, DELETE and HEAD are accepted. Default is GET.
+| Parameter | Description |
+| --- | --- |
+| ``--csv`` ``-c`` | Path to the CSV file. This file is use during the formatting process. See below for more details.|
+| ``--request`` ``-r`` | Your HTTP request, formatted with your variable (ie {0} {1} ... or ... {var1} {var2} ...). See below for more details about how to format your request. |
+| ``--no-header`` | Specify that your CSV file have no header. |
+| ``--verbose`` | Add response content to the ouput (default, only status code) |
+| ``--method`` | Choose the method of your http request. Only GET, POST, PUT, DELETE and HEAD are accepted. Default is GET. |
 
 ## How to format the HTTP request.
 
